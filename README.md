@@ -56,9 +56,11 @@ Explored vehicle specifications by brand, body type, top speed, efficiency, batt
 Selected observations include:
 
 - The Maserati GranTurismo Folgore has the highest recorded top speed at 325 km/h.
+  ![EV Top-Speed Distribution](Visualizations/speed%20dist.png)
 - The Dacia Spring Electric 45 has the lowest reported consumption at 109 Wh/km.
 - The Mercedes-Benz EQS 450+ has the highest recorded driving range at 685 km.
 - Mercedes-Benz has 42 models represented in the dataset.
+
 
 ### 2. Statistical Hypothesis Testing
 
@@ -70,6 +72,7 @@ Selected observations include:
 Pearson correlation analysis indicated a strong positive relationship. The notebook reports a p-value below 0.05, supporting rejection of the null hypothesis.
 
 **Interpretation:** Vehicles with larger batteries tend to have longer driving ranges, although other factors such as efficiency, vehicle weight, and design can also influence range.
+![Battery Capacity vs Range](Visualizations/scatter-battery-range.png)
 
 ### 3. Correlation Analysis
 
@@ -84,7 +87,7 @@ The relationship is correlational rather than causal.
 ### 4. K-Means Clustering
 
 Applied unsupervised machine learning to group EV models with similar specifications.
-
+![K-Means Clustering](Visualizations/kmeand.png)
 **Clustering features:**
 
 - Driving range
@@ -106,6 +109,7 @@ Applied unsupervised machine learning to group EV models with similar specificat
 **Selected number of clusters:** 2
 
 **Reported silhouette score:** approximately 0.40
+![Silhouette Score Analysis](Visualizations/silhouettescore.png)
 
 The clustering suggests two broad groups with different performance and efficiency characteristics. These groups can support further investigation into EV specification-based market segments.
 
